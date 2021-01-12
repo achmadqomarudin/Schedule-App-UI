@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Schedule App UI</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="primary_screen_text">Primary Screen</string>
+    <string name="secondary_sceen_text">Secondary Screen</string>
+    <string name="username">Achmad Qomarudin</string>
+
+    <string-array name="task_array">
+        <item>Schedule missed</item>
+        <item>Schedule canceled</item>
+        <item>Schedule ongoing</item>
+    </string-array>
+</resources>

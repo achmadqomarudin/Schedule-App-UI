@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pale_turquoise"
+    tools:context=".menu.dashboard.DashboardFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/montserrat_alternates_medium"
+                android:text="Dashboard"
+                android:textColor="@color/dark_late_gray"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chip_group_periode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp">
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="110dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Developer"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/Theme.ScheduleAppUI.Chip"
+                    android:textColor="@color/dark_late_gray"
+                    app:chipBackgroundColor="@color/white" />
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:text="Advertisement"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/Theme.ScheduleAppUI.Chip"
+                    android:textColor="@color/late_gray"
+                    app:chipBackgroundColor="@color/lavender" />
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="110dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Marketing"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/Theme.ScheduleAppUI.Chip"
+                    android:textColor="@color/late_gray"
+                    app:chipBackgroundColor="@color/lavender" />
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Designer"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/Theme.ScheduleAppUI.Chip"
+                    android:textColor="@color/late_gray"
+                    app:chipBackgroundColor="@color/lavender" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/montserrat_alternates_medium"
+                android:text="Agenda"
+                android:textColor="@color/dark_late_gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview_dashboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:fontFamily="@font/montserrat_alternates_medium"
+                android:text="Discussion"
+                android:textColor="@color/dark_late_gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="110dp"
+                android:background="@drawable/bg_item_rounded"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/bg_tag"
+                    android:fontFamily="@font/montserrat_alternates_black"
+                    android:paddingStart="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="15dp"
+                    android:paddingBottom="10dp"
+                    android:text="Developer"
+                    android:textColor="@color/tan"
+                    android:textSize="11sp"
+                    tools:ignore="SmallSp" />
+
+                <TextView
+                    android:id="@+id/text_schedule"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="24dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/montserrat_alternates_medium"
+                    android:lineSpacingMultiplier="1.2"
+                    android:lines="2"
+                    android:maxLines="2"
+                    android:text="Discussion about clean code with apprentice worker"
+                    android:textColor="@color/dark_late_gray"
+                    android:textStyle="bold" />
+                <!--            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."-->
+
+                <TextView
+                    android:id="@+id/text_schedule_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="24dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/montserrat_alternates_medium"
+                    android:lineSpacingMultiplier="1.2"
+                    android:maxLines="1"
+                    android:text="08.00 - 09.00"
+                    android:textColor="@color/light_gray"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

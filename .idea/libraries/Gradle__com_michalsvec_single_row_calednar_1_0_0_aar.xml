@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.michalsvec:single-row-calednar:1.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/80660c04b71f548156172707db74f055/jetified-single-row-calednar-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/80660c04b71f548156172707db74f055/jetified-single-row-calednar-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/80660c04b71f548156172707db74f055/jetified-single-row-calednar-1.0.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.michalsvec/single-row-calednar/1.0.0/fd0cbaf9d55e59b3bd6e4e5432f3252d4582a156/single-row-calednar-1.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.michalsvec/single-row-calednar/1.0.0/bd2d82e2a5e0058192bcd6e9828eb94a11fcf54b/single-row-calednar-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

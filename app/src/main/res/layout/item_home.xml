@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginStart="24dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginEnd="24dp"
+    android:layout_marginBottom="15dp"
+    android:background="@drawable/bg_item_rounded"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/bg_tag"
+        android:fontFamily="@font/montserrat_alternates_black"
+        android:paddingStart="15dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="10dp"
+        android:text="Tag"
+        android:textColor="@color/tan"
+        android:textSize="11sp"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/text_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="24dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserrat_alternates_medium"
+        android:lineSpacingMultiplier="1.2"
+        android:lines="2"
+        android:maxLines="2"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        android:textColor="@color/dark_late_gray"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_schedule_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserrat_alternates_medium"
+        android:lineSpacingMultiplier="1.2"
+        android:maxLines="1"
+        android:text="00.00 - 00.00"
+        android:textColor="@color/light_gray"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

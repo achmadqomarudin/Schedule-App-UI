@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/steel_blue"
+    tools:context=".menu.ProfileFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/ic_avatar"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                android:fontFamily="@font/montserrat_alternates_medium"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="@string/username"
+                android:textAlignment="center"
+                android:textColor="@color/white_smoke"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_half_rounded_light"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/bg_item_rounded">
+
+                    <ImageView
+                        android:id="@+id/image_diamond"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="18dp"
+                        android:background="@drawable/bg_tag"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_diamond" />
+
+                    <TextView
+                        android:id="@+id/text_member_premium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toEndOf="@+id/image_diamond"
+                        android:fontFamily="@font/montserrat_alternates_medium"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="Member Premium"
+                        android:textColor="@color/dark_late_gray"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_member_premium"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_toEndOf="@+id/image_diamond"
+                        android:fontFamily="@font/montserrat_alternates_medium"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="Active until 21 Juni 2030"
+                        android:textColor="@color/light_gray"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/bg_item_rounded"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="24dp"
+                        android:fontFamily="@font/montserrat_alternates_medium"
+                        android:text="Statistics"
+                        android:textColor="@color/dark_late_gray"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:ignore="SmallSp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="24dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="60dp"
+                            android:layout_height="10dp"
+                            android:background="@drawable/progress_developer" />
+
+                        <View
+                            android:layout_width="50dp"
+                            android:layout_height="10dp"
+                            android:layout_marginStart="-10dp"
+                            android:background="@drawable/progress_advertisement" />
+
+                        <View
+                            android:layout_width="60dp"
+                            android:layout_height="10dp"
+                            android:layout_marginStart="-10dp"
+                            android:background="@drawable/progress_marketing" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:layout_marginStart="-10dp"
+                            android:background="@drawable/progress_designer" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:background="@drawable/progress_developer" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="24dp"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/montserrat_alternates_medium"
+                            android:lineSpacingMultiplier="1.2"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="Developer"
+                            android:textColor="@color/late_gray"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginStart="14dp"
+                            android:background="@drawable/progress_advertisement" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="24dp"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/montserrat_alternates_medium"
+                            android:lineSpacingMultiplier="1.2"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="Advertisement"
+                            android:textColor="@color/late_gray"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="24dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:background="@drawable/progress_marketing" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="20dp"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/montserrat_alternates_medium"
+                            android:lineSpacingMultiplier="1.2"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="Marketing"
+                            android:textColor="@color/late_gray"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginStart="14dp"
+                            android:background="@drawable/progress_designer" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="24dp"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/montserrat_alternates_medium"
+                            android:lineSpacingMultiplier="1.2"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="Designer"
+                            android:textColor="@color/late_gray"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/bg_item_rounded"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginBottom="14dp"
+                        android:fontFamily="@font/montserrat_alternates_medium"
+                        android:text="Options"
+                        android:textColor="@color/dark_late_gray"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:ignore="SmallSp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="24dp"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/ic_privacy"
+                            android:backgroundTint="@color/late_gray" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginEnd="24dp"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/montserrat_alternates_medium"
+                            android:lineSpacingMultiplier="1.2"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="Privacy"
+                            android:textColor="@color/late_gray"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="20dp"
+                            android:background="@drawable/ic_arrow_right_24dp"
+                            android:backgroundTint="@color/late_gray" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="24dp"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/ic_security"
+                            android:backgroundTint="@color/late_gray" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginEnd="24dp"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/montserrat_alternates_medium"
+                            android:lineSpacingMultiplier="1.2"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="Security"
+                            android:textColor="@color/late_gray"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="20dp"
+                            android:background="@drawable/ic_arrow_right_24dp"
+                            android:backgroundTint="@color/late_gray" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginBottom="18dp"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/ic_help"
+                            android:backgroundTint="@color/late_gray" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginEnd="20dp"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/montserrat_alternates_medium"
+                            android:lineSpacingMultiplier="1.2"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="Help"
+                            android:textColor="@color/late_gray"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="20dp"
+                            android:background="@drawable/ic_arrow_right_24dp"
+                            android:backgroundTint="@color/late_gray" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/bg_btn_change_password"
+                    android:fontFamily="@font/montserrat_alternates_medium"
+                    android:text="Change Password"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="120dp"
+                    android:background="@drawable/bg_btn_logout"
+                    android:fontFamily="@font/montserrat_alternates_medium"
+                    android:text="Logout"
+                    android:textAllCaps="false"
+                    android:textColor="@color/steel_blue"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>
