@@ -1,8 +1,8 @@
 # Schedule App UI
 
 [![Platform](https://img.shields.io/badge/platform-Android-yellow.svg)](https://www.android.com)
-[![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg?style=flat-square)](https://www.apache.org/licenses/LICENSE-2.0.html)
-[![Gradle Version](https://img.shields.io/badge/gradle-4.0-green.svg)](https://docs.gradle.org/current/release-notes)
+[![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
+[![Gradle Version](https://img.shields.io/badge/gradle-6.5-green.svg)](https://docs.gradle.org/current/release-notes)
 [![Awesome Kotlin Badge](https://kotlin.link/awesome-kotlin.svg)](https://github.com/KotlinBy/awesome-kotlin)
 
 📅  A beautiful Schedule App UI written in Kotlin for android with examples.
